@@ -1,6 +1,4 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,12 +10,12 @@ span,
 applet,
 object,
 iframe,
-h1,
+/* h1,
 h2,
 h3,
 h4,
 h5,
-h6,
+h6, */
 p,
 blockquote,
 pre,
@@ -31,7 +29,7 @@ code,
 del,
 dfn,
 em,
-img,
+/* img, */
 ins,
 kbd,
 q,
@@ -105,16 +103,16 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+  display: flex;
 }
 body {
   line-height: 1;
   margin: 2%;
 }
-ol,
+/* ol,
 ul {
   list-style: none;
-}
+} */
 blockquote,
 q {
   quotes: none;
@@ -130,6 +128,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+*/
 
 /* Set every element's box-sizing to border-box */
 * {
@@ -174,135 +173,170 @@ header {
   background-color: white;
   justify-content: flex-end;
 }
+/* header img {
+  display: flex;
+  align-items: stretch;
+  margin-right: 0;
+  background-color: white;
+} */
 nav a {
   display: flex;
   width: 15%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.473);
   justify-content: space-evenly;
 }
 
 a:link {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 a:visited {
-  color: black;
+  color: white;
 }
 
 a:hover {
-  color: black;
+  color: white;
 }
 
 a:active {
-  color: black;
-}
-h1 {
-  text-align: center;
-  font-size: 46px;
-  display: flex;
+  color: white;
 }
 
-.wholeIntro .headerImg {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  width: 30%;
+.services-header-img {
+  width: 100%;
 }
 
-.wholeIntro {
+.services h2 {
+  font-size: 36px;
+}
+
+.services p {
+  font-size: 18px;
+}
+
+#theSix {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* the six boxes  */
+
+.digitalDesign {
+  display: flex;
+  width: 46%;
+  border: black solid 1px;
+  background-color: rgb(192, 190, 190);
+  flex-direction: column;
+  padding: 1%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+.uxUi {
+  display: flex;
+  width: 46%;
+  border: black solid 1px;
+  background-color: rgb(192, 190, 190);
+  flex-direction: column;
+  padding: 1%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+.digitalMarketing {
+  display: flex;
+  width: 46%;
+  border: black solid 1px;
+  background-color: rgb(192, 190, 190);
+  flex-direction: column;
+  padding: 1%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+.webDevelopment {
+  display: flex;
+  width: 46%;
+  border: black solid 1px;
+  background-color: rgb(192, 190, 190);
+  flex-direction: column;
+  padding: 1%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+.iosDevelopment {
+  display: flex;
+  width: 46%;
+  border: black solid 1px;
+  background-color: rgb(192, 190, 190);
+  flex-direction: column;
+  padding: 1%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+.androidDevelopment {
+  display: flex;
+
+  display: flex;
+  width: 46%;
+  border: black solid 1px;
+  background-color: rgb(192, 190, 190);
+  flex-direction: column;
+  padding: 1%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+#theSix button {
+  width: 20%;
+  padding: 1.5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: black solid 1px;
+  border-radius: 6px;
+}
+
+.someFacts {
+  display: flex;
+  flex-direction: row;
+  /* width: 100%; */
+  line-height: 1.2em;
+  margin-top: 3%;
+}
+.someFacts p {
+  width: 90%;
+}
+ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
+  line-height: 2.2em;
+  list-style-type: square;
+}
+.services-info-img {
+  display: flex;
+  width: 90%;
+  justify-content: flex-end;
+}
+
+.someFactsList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
   margin-top: 5%;
 }
 
-.intro {
-  display: flex;
-  margin-left: 20%;
-
-  flex-direction: column;
-}
-
-.intro button {
-  display: flex;
-  height: 50%;
-  width: 60%;
-  justify-content: center;
-  margin-left: 28%;
-  border: black 1px solid;
-  padding: 3%;
-}
-
-.middle-img {
-  width: 100%;
-  display: flex;
-}
-
-.container {
-  border-bottom: 1px solid grey;
-}
-
-.container .one {
-  display: flex;
-  flex-wrap: wrap;
-  width: 49%;
-  padding: 1%;
-}
-.container .two {
-  display: flex;
-  flex-wrap: wrap;
-  width: 49%;
-  padding: 1%;
-}
-.container .three {
-  display: flex;
-  flex-wrap: wrap;
-  width: 30%;
-  padding: 1%;
-}
-.container .four {
-  display: flex;
-  flex-wrap: wrap;
-  width: 30%;
-  padding: 1%;
-}
-.container .five {
-  display: flex;
-  flex-wrap: wrap;
-  width: 30%;
-  padding: 1%;
-}
-.container {
-  display: flex;
-  flex-wrap: wrap;
-}
-.copyright {
-  align-content: center;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.contact {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.copyright {
-  font-size: large;
-
-  text-align: center;
-}
-.navHeader {
-  display: flex;
-}
-/* MEDIA Queries */
 @media (max-width: 800px) {
   header {
     flex-direction: column-reverse;
@@ -335,11 +369,13 @@ section {
 @media (max-width: 500px) {
   body {
     width: 100%;
+    margin: 5%;
   }
 
   header {
     width: 100%;
     margin: 5% 0;
+    margin-left: 4%;
   }
   header nav {
     flex-direction: column;
@@ -363,21 +399,6 @@ section {
     flex-direction: column;
     margin: 5%;
   }
-  .container .one {
-    width: 100%;
-  }
-  .container .two {
-    width: 100%;
-  }
-  .container .three {
-    width: 100%;
-  }
-  .container .four {
-    width: 100%;
-  }
-  .container .five {
-    width: 100%;
-  }
 
   header .image {
     display: flex;
@@ -394,5 +415,36 @@ section {
   }
   .contact {
     margin: 5%;
+  }
+
+  .digitalDesign {
+    width: 100%;
+  }
+  .uxUi {
+    width: 100%;
+  }
+  .digitalMarketing {
+    width: 100%;
+  }
+  .webDevelopment {
+    width: 100%;
+  }
+  .iosDevelopment {
+    width: 100%;
+  }
+  .androidDevelopment {
+    width: 100%;
+  }
+
+  ul {
+    margin-left: 18%;
+  }
+  .services-info-img {
+    width: 60%;
+    margin-left: 10%;
+  }
+  .someFacts {
+    flex-direction: column;
+    margin-left: 10%;
   }
 }
